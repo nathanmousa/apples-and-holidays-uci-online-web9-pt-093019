@@ -69,10 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     holiday.each do |holiday, supply|
       new_holiday = []
-      
-      holiday.each do |holiday|
-        holiday.split << new_holiday
-      end
+      holiday.split << new_holiday
       
       puts "  #{new_holiday.capitalize}: #{supply.join(", ")}"
     end
